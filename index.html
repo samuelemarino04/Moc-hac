@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+    <html lang="it">
+    <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moc-hac</title>
+        <link rel="stylesheet" href="style.css">
+
+    
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <h1>Moc-hac</h1>
+            </div>
+        </header>
+    
+        <!-- Sezione Presentazione -->
+        <section id="presentazione">
+            <div class="container">
+                <h2>Chi siamo</h2>
+                <p>Conosci i ballerini e il loro stile unico. In questa sezione potrai scoprire la loro passione per la
+                    danza.</p>
+                <img src="foto-ballerini.jpg" alt="I ballerini" class="immagine-ballerini">
+            </div>
+        </section>
+    
+        <!-- Sezione Video -->
+        <section id="video">
+            <div class="container">
+                <h2>I nostri video</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="video-performance.mp4" type="video/mp4">
+                        Il tuo browser non supporta il tag video.
+                    </video>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sezione Galleria Foto -->
+        <section id="galleria">
+            <div class="container">
+                <h2>La nostra Galleria</h2>
+                <div class="galleria-foto">
+                    <img src="foto1.jpg" alt="Immagine 1" class="foto">
+                    <img src="foto2.jpg" alt="Immagine 2" class="foto">
+                    <img src="foto3.jpg" alt="Immagine 3" class="foto">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sezione Contatti -->
+        <section id="contatti">
+            <div class="container">
+                <h2>Contattaci</h2>
+                <form id="contact-form" method="POST" action="invia_contatto.php">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="messaggio">Messaggio</label>
+                    <textarea id="messaggio" name="messaggio" required></textarea>
+    
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Portfolio di [Nome Ballerino 1] e [Nome Ballerino 2]. Tutti i diritti riservati.</p>
+            </div>
+        </footer>
+    
+        <script src="script.js"></script>
+    </body>
+    
+    </html>
