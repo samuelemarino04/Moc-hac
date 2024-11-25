@@ -149,3 +149,37 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* Biografie */
+
+#biografias {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.biografia {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.biografia img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.contenido-biografia h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.contenido-biografia p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}

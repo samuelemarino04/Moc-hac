@@ -1,30 +1,89 @@
- <!DOCTYPE html>
-    <html lang="it">
-    <body>
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Moc-hac</title>
         <link rel="stylesheet" href="style.css">
 
-    
+
         <!-- Header -->
         <header>
             <div class="container">
                 <h1>Moc-hac</h1>
             </div>
         </header>
-    
+
         <!-- Sezione Presentazione -->
         <section id="presentazione">
             <div class="container">
                 <h2>Chi siamo</h2>
                 <p>Conosci i ballerini e il loro stile unico. In questa sezione potrai scoprire la loro passione per la
                     danza.</p>
-                <img src="foto-ballerini.jpg" alt="I ballerini" class="immagine-ballerini">
+                <img src="\images\Mochac-1.jpg" alt="I ballerini" class="immagine-ballerini">
             </div>
         </section>
-    
+
+        <!-- Sección de Biografías -->
+        <section id="biografias">
+            <div class="container">
+                <h2>Nuestros Bailarines</h2>
+        
+                <!-- Biografía de Carolina Tagliabue -->
+                <div class="biografia">
+                    <img src="carolina.jpg" alt="Carolina Tagliabue" class="imagen-bailarines">
+                    <div class="contenido-biografia">
+                        <h3>Carolina Tagliabue</h3>
+                        <p>
+                            Empieza sus estudios artísticos en Arcademia, Omegna (Italia) formándose en distintas disciplinas
+                            artísticas tales como el teatro y varias especialidades de danza: ballet, contemporáneo, jazz. En
+                            2017 se gradúa en Arte dramático en la academia profesional CTA, Centro Teatro Attivo, Milán.
+                            Participa en distintos proyectos artísticos como actriz y bailarina: la producción de *Madame la
+                            Gimp, el Musical*, dirección de Fabrizio Rizzolo; *Sogno di una Notte di Mezza Estate*, dirección de
+                            Mattia Sebastian Giorgetti.
+                        </p>
+                        <p>
+                            Al finalizar los estudios en la academia, se muda a Madrid donde especializa su formación en danza
+                            contemporánea en la compañía CaraBdanza, bajo la dirección de Gonzalo Díaz. En la capital participa
+                            en distintos proyectos, se dedica a la docencia en danza y teatro, y empieza a mostrar interés en la
+                            coreografía.
+                        </p>
+                        <p>
+                            En 2019 comienza la carrera universitaria en Danza Contemporánea por el Instituto de Danza Alicia
+                            Alonso. La búsqueda de un lenguaje propio y personal, que se mueve dentro de las distintas ramas de
+                            la danza contemporánea y en particular de la danza-teatro, lleva a coincidir durante el curso con
+                            Moisés González. Con el mismo empieza una colaboración y nace MoC-ha. Juntos parten un recorrido
+                            artístico en la ciudad de Madrid, colaboran en la creación de proyectos tanto dentro del ambiente
+                            universitario como fuera con carácter independiente.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Biografía de Moisés González -->
+                <div class="biografia">
+                    <img src="moises.jpg" alt="Moisés González" class="imagen-bailarines">
+                    <div class="contenido-biografia">
+                        <h3>Moisés González</h3>
+                        <p>
+                            Bailarín, coreógrafo y docente extremeño con especialización en danza contemporánea. Co-director de
+                            la compañía MoC-ha y miembro de la compañía Larumbe, ha colaborado con reconocidos coreógrafos como
+                            Juan Torres, Maruxa Salas y Erik Jiménez.
+                        </p>
+                        <p>
+                            Su formación profesional abarca el grado en Artes Visuales y Danza por la Universidad Rey Juan
+                            Carlos, así como estudios profesionales en Carmen Senra y el Conservatorio Superior María de Ávila,
+                            donde actualmente cursa Pedagogía de la Danza Contemporánea. Asimismo, posee una maestría en Gestión
+                            Cultural.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Sezione Video -->
         <section id="video">
             <div class="container">
@@ -37,7 +96,7 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- Sezione Galleria Foto -->
         <section id="galleria">
             <div class="container">
@@ -49,34 +108,46 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- Sezione Contatti -->
-        <section id="contatti">
+
+        <!-- Sección Contactos -->
+        <section id="contactos">
             <div class="container">
-                <h2>Contattaci</h2>
-                <form id="contact-form" method="POST" action="invia_contatto.php">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
-    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="messaggio">Messaggio</label>
-                    <textarea id="messaggio" name="messaggio" required></textarea>
-    
-                    <button type="submit">Invia</button>
+                <h2>Contactos</h2>
+                <p>Conecta con nosotros en redes sociales o envíanos un mensaje.</p>
+                <div>
+                    <!-- Enlaces a redes sociales -->
+                    <a href="https://www.instagram.com/[tu-perfil]" target="_blank"
+                        style="color: #fff; text-decoration: none; margin: 0 10px;">
+                        <img src="instagram-icon.png" alt="Instagram" style="width: 30px; vertical-align: middle;"> Instagram
+                    </a>
+                    <a href="https://www.facebook.com/[tu-perfil]" target="_blank"
+                        style="color: #fff; text-decoration: none; margin: 0 10px;">
+                        <img src="facebook-icon.png" alt="Facebook" style="width: 30px; vertical-align: middle;"> Facebook
+                    </a>
+                </div>
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tu mensaje"></textarea>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </section>
-    
+
+
         <!-- Footer -->
         <footer>
             <div class="container">
                 <p>&copy; 2024 Portfolio di [Nome Ballerino 1] e [Nome Ballerino 2]. Tutti i diritti riservati.</p>
             </div>
         </footer>
-    
+
         <script src="script.js"></script>
-    </body>
-    
-    </html>
+</body>
+
+</html>
